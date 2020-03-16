@@ -1,0 +1,566 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+  background-color: #FFFFFF;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  font-size: 50px;
+  line-height: 1;
+  padding: 50px 0;
+  text-align: center;
+}
+
+h2{
+  font-size: 32px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+nav li{
+  display:inline;
+  padding-right:20px;
+}
+
+nav a{
+  color: black;
+  font-weight: bold;
+  text-decoration: none; 
+}
+
+nav a:hover{
+  text-decoration: underline;
+}
+
+.skip a{
+  background: white;
+  left: 0;
+  padding: 6px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+  position: absolute;
+  top: -40px;
+}
+.skip a:focus {
+  top: 0px;
+}
+footer{
+  color: solid black;
+  grid-column: 1 / -1;  
+  grid-row: 7 / auto; 
+  padding-top: 30px;
+  text-align: center;
+  border: 10px solid black;
+  font-family: "Comic Sans MS";
+}
+nav{
+  background-color: #FFFFFF;
+  padding: 20px 0; 
+  text-align: left;
+  grid-column: 1/ -1;
+  grid-row: 1/ span 1;
+  font-family: "Comic Sans MS";
+}
+
+header{
+  background-attachment: fixed; /* Parallax effect */     
+  background-position: center;  /* Parallax effect */
+  background-repeat: no-repeat; /* Parallax effect */
+  background-size: cover;       /* Parallax effect */
+  color: solid black;
+  height: 400px; 
+  grid-column: 1/ -1;
+  grid-row: 2/ span 1;
+  background-image: url("../images/F84646.jpg");
+  border: 10px solid black;
+  font-family: "Comic Sans MS";
+}
+
+header p{
+  color: solid black;
+  font-size: 24px;
+  padding: 0 100px;
+  text-align: center;
+  font-family: "Comic Sans MS";
+}
+.about{
+  background-image: url("../images/F88246.jpg");
+}
+#aboutTitle{
+  border: 2px solid black;
+  padding: 0.5px;
+}
+.education {
+  background-image: url("../images/FAEF05.jpg");
+}
+.work {
+  background-image: url("../images/A5F846.jpg");
+}
+#workTitle {
+  border: 2px solid black;
+  padding: 0.5px;
+}
+.graphicDesign{
+  background-image: url("../images/46F8E3.jpg");
+}
+#designTitle{
+  border: 2px solid black;
+  padding: 0.5px;
+}
+.eats {
+  background-image: url("../images/4681F8.jpg");
+}
+/*#eatsTitle{
+
+}*/
+.contact {
+  background-image: url("../images/C946F8.jpg");
+}
+#contactTitle{
+  border:2px solid black;
+  padding: 0.5px;
+}
+footer {
+  background-image: url("../images/F846D5.jpg");
+  padding: 20px;
+}
+
+.container{
+  display:grid ;
+  grid-template-columns: 3(auto);
+  grid-template-rows: 30px repeat(5 auto) 100px;
+  grid-row-gap: 15px;
+}
+.about, .education, .work, .graphicDesign .eats .contact{
+  grid-column: 1/-1;
+  overflow: hidden;
+}
+
+.text{
+  background-color: rgba(255, 255, 255, .8);
+  border: 10px solid black;
+  padding: 30px;
+  align-self: center;
+  font-family: "Calibri";
+
+}
+
+/*Work page here*/
+#paramountTitle {
+  font-family: "Comic Sans MS";
+  font-size: 60px;
+  color: navy;
+}
+#doraSocialTalent, #spongebob, #intern{
+  font-family: "Comic Sans MS";
+  font-size: 36px;
+  text-align: center;
+  color: navy;
+}
+#paramountParagraph, #doraParagraph, #spongebobParagraph, #internParagraph{
+  font-family: "Calibri";
+  font-size: 20px;
+  padding: 12px;
+  color: #52527A;
+  text-align: center;
+
+}
+
+#doraImg, #spongebobImg, #paramountGroup, #fountainImg{
+  display: block;
+  max-width: 400px;
+  max-height: 600px;
+  margin: auto;
+
+}
+/*Contact Form Here*/
+#contactForm {
+  text-align: left;
+  background-color: #FFCCFF;
+  font-family: 'Chilanka';
+  font-size: 20px;
+  padding: 10px;
+  border: 2px solid black;
+  box-sizing: border-box;
+  text-align: center;
+
+}
+#message {
+  resize: vertical;
+}
+#submitButton {
+  font-size: 12px;
+  font-family: "Comic Sans MS";
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+/*Graphic Design Page*/
+.designTitleText{
+  font-size: 60px;
+  font-family: "Calibri";
+  text-transform: uppercase;
+  color: #FF5050;
+  text-shadow: 4px 4px #33CCCC;
+}
+#designH3 {
+  font-size: 18px;
+  font-family: "Calibri";
+  text-align: center;
+  color: #464646;
+}
+
+@-webkit-keyframes img_movement{
+}
+@keyframes img_movement{
+  from {width: 0px;}
+  to {width: 500px;}
+} 
+
+.row, .column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  animation: img_movement 7s;
+}
+.column img {
+  width: 100%;
+  height: 100%;
+  max-width: 450px;
+  max-height: 450;
+  padding: 10px;
+}
+.row img {
+  width: 100%;
+  height: 100%;
+  max-width: 450px;
+  max-height: 450px;
+  padding: 10px;
+}
+
+
+/*Education Page Here*/
+
+#parallax {
+  background-image: url("../images/michiganBigHouse.jpg");
+  min-height: 500px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#educationTitle{
+  border: 2px solid black;
+  padding: 0.5px;
+}
+
+#parallax p {
+  color: navy;
+  text-shadow: 8px 12px yellow;
+  font-family: "Holtwood One SC";
+  font-size: 100px;
+  text-align: center;
+}
+
+#parallaxText p {
+  background-color: #002266;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  font-family: "Didact Gothic";
+}
+
+#michiganVideo{
+  padding: 10px;
+  display: block;
+  margin: auto;
+  background-color: #002266;
+}
+/*EATS PAGE HERE!*/
+
+#hoverInstructions{
+  text-align: center;
+  font-family: "Lemon";
+}
+#flipcardTitle{
+  font-family: "Lemon";
+}
+#flipcard1{
+  background-color: transparent;
+  width: 250px;
+  height: 250px;
+  perspective: 1000px;
+  margin: auto;
+}
+#flipcard1:hover #inner1 {
+  transform: rotateY(180deg);
+}
+#inner1 {
+  position:relative;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  transition: transform 0.4s;
+  transform-style: preserve-3d;
+}
+#front1, #back1{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-backface-visibility:hidden;
+}
+#front1 {
+  background-color: #990000;
+  color: white;
+}
+#inNout {
+  width: 250px;
+  height: 250px;
+}
+#back1 {
+  background-color: #990000;
+  color: white;
+  transform: rotateY(180deg);
+  font-family: "Krub";
+}
+#back1 h1{
+  font-size: 30px;
+}
+#flipcard2{
+  background-color: transparent;
+  width: 250px;
+  height: 250px;
+  perspective: 1000px;
+  margin: auto;
+}
+#flipcard2:hover #inner2 {
+  transform: rotateY(180deg);
+}
+#inner2 {
+  position:relative;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+#front2, #back2{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-backface-visibility:hidden;
+}
+#front2 {
+  background-color: #003366;
+  color: white;
+}
+#waffle {
+  width: 250px;
+  height: 250px;
+}
+#back2 {
+  background-color: #003366;
+  color: white;
+  transform: rotateY(180deg);
+  font-family: "Krub";
+}
+#back2 h1{
+  font-size: 30px;
+}
+#flipcard3{
+  background-color: transparent;
+  width: 250px;
+  height: 250px;
+  perspective: 1000px;
+  margin: auto;
+}
+#flipcard3:hover #inner3 {
+  transform: rotateY(180deg);
+}
+#inner3 {
+  position:relative;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+#front3, #back3{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-backface-visibility:hidden;
+}
+#front3 {
+  background-color: #006600;
+  color: white;
+}
+#zingermans {
+  width: 250px;
+  height: 250px;
+}
+#back3 {
+  background-color: #006600;
+  color: white;
+  transform: rotateY(180deg);
+  font-family: "Krub";
+}
+#back3 h1{
+  font-size: 30px;
+}
+#flipcard4{
+  background-color: transparent;
+  width: 250px;
+  height: 250px;
+  perspective: 1000px;
+  margin: auto;
+}
+#flipcard4:hover #inner4 {
+  transform: rotateY(180deg);
+}
+#inner4 {
+  position:relative;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+#front4, #back4{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-backface-visibility:hidden;
+}
+#front4 {
+  background-color: #600080;
+  color: white;
+}
+#urth {
+  width: 250px;
+  height: 250px;
+}
+#back4 {
+  background-color: #600080;
+  color: white;
+  transform: rotateY(180deg);
+  font-family: "Krub";
+}
+#back4 h1{
+  font-size: 30px;
+}
+#flipcard5{
+  background-color: transparent;
+  width: 250px;
+  height: 250px;
+  perspective: 1000px;
+  margin: auto;
+}
+#flipcard5:hover #inner5 {
+  transform: rotateY(180deg);
+}
+#inner5 {
+  position:relative;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+#front5, #back5{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-backface-visibility:hidden;
+}
+#front5 {
+  background-color: #99004D;
+  color: white;
+}
+#acai {
+  width: 250px;
+  height: 250px;
+}
+#back5 {
+  background-color: #99004D;
+  color: white;
+  transform: rotateY(180deg);
+  font-family: "Krub";
+}
+#back5 h1{
+  font-size: 30px;
+}
+
+@media all and (min-width: 800px){ 
+
+  .container{
+    display: grid;
+    grid-template-columns: 1(auto);
+    grid-template-rows: 5(auto);
+  }
+
+  .about, .education, .work, .graphicDesign .eats{
+  grid-column: 1/-1;
+  overflow: hidden;
+  }
+
+  nav{
+    background-color: #ddd;
+    text-align: right;
+    padding: 35px 0px;
+    align-self: center;
+    border: 10px solid black;
+  }
+
+  #paramountParagraph, #doraParagraph, #spongebobParagraph, #internParagraph{
+  font-family: "Calibri";
+  font-size: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+  color: #52527A;
+  text-align: center;
+}
+#doraImg, #spongebobImg, #fountainImg{
+  display: block;
+  max-width: 600px;
+  max-height: 800px;
+  margin: auto;
+  padding: 50px;
+}
+#paramountGroup{
+  display: block;
+  max-width: 800px;
+  max-height: 600px;
+  margin: auto;
+  padding: 50px;
+}
+
+@media print{
+  .michiganVideo{
+    display: none;
+  }
+  #parallax{
+    display: none;
+  }
+  .about, .education, .work, .contact, .graphicDesign, .eats{
+    background-image: none;
+  }
+}
+@media screen and (prefers-reduced-motion: reduce) {
+    .skip a{
+    -webkit-transition: 0s;
+    transition: 0s;
+  }
+  .row{
+    animation: 0s;
+  }
+  .column{
+    animation: 0s;
+  }
